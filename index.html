@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    
-    <script type="module" src="src/scripts/main.js"></script>
-  </body>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/breakfast-2.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+  <title>Appetizer - Home Page</title>
+</head>
+
+<body class="bg-lite">
+  <!-- navbar -->
+  <nav class="bg-lite py-3 px-10 z-50 sticky top-0 left-0 right-0">
+    <div class="flex justify-between">
+      <!-- navbar => desktop -->
+      <div class="mx-auto container max-w-[1500px] flex justify-between items-center">
+        <!-- logo -->
+        <div class="font-bold text-lg text-dark">ApPeTiZeR</div>
+        <!-- links -->
+        <ul class="hidden sm:flex">
+          <li class="px-2 mx-1 duration-300 text-orange hover:text-dark lg:text-dark lg:hover:text-orange font-bold"><a
+              href="">Home</a></li>
+          <li class="px-2 mx-1 duration-300 text-orange hover:text-dark lg:text-dark lg:hover:text-orange font-bold"><a
+              href="">About</a></li>
+          <li class="px-2 mx-1 duration-300 text-orange hover:text-dark lg:text-dark lg:hover:text-orange font-bold"><a
+              href="">Menu</a></li>
+          <li class="px-2 mx-1 duration-300 text-orange hover:text-dark lg:text-dark lg:hover:text-orange font-bold"><a
+              href="">Blog</a></li>
+          <li class="px-2 mx-1 duration-300 text-orange hover:text-dark lg:text-dark lg:hover:text-orange font-bold"><a
+              href="">Contact</a></li>
+        </ul>
+        <!-- button -->
+        <button class="text-lite bg-orange py-2 px-10 rounded-md hidden lg:block">Book a table</button>
+      </div>
+      <!-- navbar ==> mobile -->
+      <div class="sm:hidden w-full">
+        <!-- Mobile menu button -->
+        <div class="sm:hidden flex justify-end w-full">
+          <!-- navbar user icons mobile-->
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-8 h-8 rounded-md m-5 text-white " x-show="!showMenu" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- navbar links -> mobile -->
+    <ul class="hidden py-4 px-3 bg-dark justify-between gap-x-5 w-full mobile-menu text-center">
+      <li class="px-2 mx-1 duration-300 text-orange hover:text-lite font-bold"><a href="">Home</a></li>
+      <li class="px-2 mx-1 duration-300 text-orange hover:text-lite font-bold"><a href="">About</a></li>
+      <li class="px-2 mx-1 duration-300 text-orange hover:text-lite font-bold"><a href="">Menu</a></li>
+      <li class="px-2 mx-1 duration-300 text-orange hover:text-lite font-bold"><a href="">Blog</a></li>
+      <li class="px-2 mx-1 duration-300 text-orange hover:text-lite font-bold"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- scripts -->
+  <script type="module" src="src/scripts/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="owl/owl.carousel.min.js"></script>
+  <script src="src/scripts/owl-config.js"></script>
+</body>
+
 </html>
