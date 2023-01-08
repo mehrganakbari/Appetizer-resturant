@@ -8,6 +8,11 @@ module.exports = {
       'orange': '#FFA323',
     },
     extend: {
+      backgroundImage: {
+        'slider-1': "url('/assets/images/bg_1.jpg')",
+        'slider-2': "url('/assets/images/bg_2.jpg')",
+        'slider-3': "url('/assets/images/bg_3.jpg')",
+      },
       screens: {
         'xs': '400px',
         'xs2': '515px',
