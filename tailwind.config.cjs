@@ -9,9 +9,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'slider-1': "url('/assets/images/bg_1.jpg')",
         'slider-2': "url('/assets/images/bg_2.jpg')",
         'slider-3': "url('/assets/images/bg_3.jpg')",
+        'bottomAbout': "url('/assets/images/bg_4.jpg')",
       },
       screens: {
         'xs': '400px',
