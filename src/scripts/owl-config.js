@@ -5,7 +5,7 @@ $(document).ready(function () {
     loop: true,
     center: true,
     dots: false,
-    // lazyLoad: true,
+    lazyLoad: true,
     autoplay: true,
     responsive: {
       0: {
