@@ -7,6 +7,7 @@ module.exports = {
       'lite-gray': '#FAFAFA',
       'dark': '#333333',
       'orange': '#FFA323',
+      'lite-text': '#707981',
     },
     extend: {
       backgroundImage: {
