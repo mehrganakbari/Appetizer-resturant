@@ -14,6 +14,7 @@ module.exports = {
         'slider-2': "url('/assets/images/bg_2.jpg')",
         'slider-3': "url('/assets/images/bg_3.jpg')",
         'bottomAbout': "url('/assets/images/bg_4.jpg')",
+        'Testimony': "url('/assets/images/bg_5.jpg')",
       },
       screens: {
         'xs': '400px',
@@ -27,5 +28,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

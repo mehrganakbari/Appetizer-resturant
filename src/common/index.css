@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+    min-width: 260px;
+}
+
+.arrow {
+top: 30%
+}
+
+#carrusel {
+scroll-behavior: smooth;
+}
