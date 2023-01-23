@@ -15,6 +15,11 @@ module.exports = {
         'slider-3': "url('/assets/images/bg_3.jpg')",
         'bottomAbout': "url('/assets/images/bg_4.jpg')",
         'Testimony': "url('/assets/images/bg_5.jpg')",
+        'insat-1': "url('/assets/images/insta-1.jpg')",
+        'insat-2': "url('/assets/images/insta-2.jpg')",
+        'insat-3': "url('/assets/images/insta-3.jpg')",
+        'insat-4': "url('/assets/images/insta-4.jpg')",
+        'insat-5': "url('/assets/images/insta-5.jpg')",
       },
       screens: {
         'xs': '400px',

@@ -1,56 +1,56 @@
-import "../common/index.css"
+import '../common/index.css'
 
 // navbar links responsive
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+const btn = document.querySelector('button.mobile-menu-button')
+const menu = document.querySelector('.mobile-menu')
 
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-});
+btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden')
+})
 
 // numbers
 let num1 = 0;
 setInterval(() => {
-    const percentageNumber = document.querySelector('#Number1');
-    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'));
+    const percentageNumber = document.querySelector('#Number1')
+    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'))
     if (num1 !== percentageNumberValue) {
-        num1++;
-        percentageNumber.innerHTML = `${num1}+`;
+        num1++
+        percentageNumber.innerHTML = `${num1}+`
     }
-}, 50);
+}, 50)
 
 let num2 = 0;
 setInterval(() => {
-    const percentageNumber = document.querySelector('#Number2');
-    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'));
+    const percentageNumber = document.querySelector('#Number2')
+    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'))
     if (num2 !== percentageNumberValue) {
-        num2++;
-        percentageNumber.innerHTML = `${num2}+`;
+        num2++
+        percentageNumber.innerHTML = `${num2}+`
     }
-}, 25);
+}, 25)
 
 let num3 = 0;
 setInterval(() => {
-    const percentageNumber = document.querySelector('#Number3');
-    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'));
+    const percentageNumber = document.querySelector('#Number3')
+    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'))
     if (num3 !== percentageNumberValue) {
-        num3++;
-        percentageNumber.innerHTML = `${num3}+`;
+        num3++
+        percentageNumber.innerHTML = `${num3}+`
     }
-}, 100);
+}, 100)
 
 let num4 = 0;
 setInterval(() => {
-    const percentageNumber = document.querySelector('#Number4');
-    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'));
+    const percentageNumber = document.querySelector('#Number4')
+    const percentageNumberValue = Number(percentageNumber.getAttribute('data-value'))
     if (num4 !== percentageNumberValue) {
-        num4++;
-        percentageNumber.innerHTML = `${num4}+`;
+        num4++
+        percentageNumber.innerHTML = `${num4}+`
     }
-}, 25);
+}, 25)
 
 // slider
-var elem = document.getElementById('carrusel')
+const elem = document.querySelector('#carrusel')
 var Testimony = [{
         id: 1,
         name: 'Jason McClean',
@@ -106,11 +106,11 @@ var cards = ''
 
 Testimony.forEach(el => {
     let template = `
-    <div class="card flex flex-col items-center w-64 bg-white text-center p-4">
-    <img src="${el.img}" class="rounded-full w-28 mb-6">
-    <p class=" text-lite-text">${el.text}</p>
-    <p class="font-bold mt-4">${el.name}</p>
-    <p class="mt-4 text-sm text-lite-text">${el.company}</p>
+    <div class='card flex flex-col items-center w-64 bg-white text-center p-4'>
+    <img src='${el.img}' class='rounded-full w-28 mb-6'>
+    <p class=' text-lite-text'>${el.text}</p>
+    <p class='font-bold mt-4'>${el.name}</p>
+    <p class='mt-4 text-sm text-lite-text'>${el.company}</p>
     </div>
   `
 
@@ -121,9 +121,9 @@ elem.insertAdjacentHTML('beforeend', cards)
 
 // ARROWS
 
-var right = document.getElementById('carrousel-right')
+const right = document.querySelector('#carrousel-right')
 
-var left = document.getElementById('carrousel-left')
+const left = document.querySelector('#carrousel-left')
 
 right.addEventListener('click', function () {
     elem.scrollLeft += 260
